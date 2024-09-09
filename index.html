@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rummy Score Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Running Text Banner -->
+    <div id="banner">
+        <marquee behavior="scroll" direction="left">App developed by Gobinath T</marquee>
+    </div>
+
+    <!-- Centered Title -->
+    <h1>Rummy Score Tracker</h1>
+
+    <div id="app">
+        <!-- Current Round Display -->
+        <div id="current-round">
+            <h2>Current Round: <span id="round-number">1</span></h2>
+        </div>
+
+        <!-- Player Name Input Section -->
+        <form id="player-form" onsubmit="event.preventDefault(); addPlayer();">
+            <label for="player-name">Enter Player Name:</label>
+            <input type="text" id="player-name" placeholder="Player Name" required>
+            <button type="submit">Add Player</button>
+        </form>
+
+        <!-- Score Limit Selection -->
+        <div id="score-limit-container">
+            <label for="score-limit">Set Score Limit:</label>
+            <select id="score-limit">
+                <option value="80">80 Points</option>
+                <option value="160">160 Points</option>
+                <option value="240">240 Points</option>
+                <option value="320">320 Points</option>
+            </select>
+        </div>
+
+        <!-- Scoreboard Table -->
+        <h2>Scoreboard</h2>
+        <table id="score-table">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Round Scores</th>
+                    <th>Total Score</th>
+                    <th>Points Left</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Player rows will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Score Input Section -->
+        <div id="score-input">
+            <label for="player-select">Select Player:</label>
+            <select id="player-select">
+                <!-- Options will be dynamically added here -->
+            </select>
+
+            <label for="score-value">Enter Score:</label>
+            <input type="number" id="score-value" placeholder="Score">
+
+            <button type="button" onclick="addScore()">Add Score</button>
+        </div>
+
+        <!-- Placeholder for Quotes or Images -->
+        <div id="quotes">
+            <!-- You can add small banners with quotes or images here -->
+            <!-- Example: -->
+            <!-- <div class="quote-banner">"The best way to predict the future is to create it." - Peter Drucker</div> -->
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

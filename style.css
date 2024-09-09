@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* Running Text Banner */
+#banner {
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 10px 0;
+}
+
+marquee {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Centered Title */
+h1 {
+    color: #61dafb;
+    margin: 20px 0;
+}
+
+/* App Container */
+#app {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Current Round Display */
+#current-round {
+    margin-bottom: 20px;
+}
+
+#current-round h2 {
+    color: #333;
+}
+
+/* Forms and Inputs */
+form {
+    margin: 20px 0;
+}
+
+#score-limit-container {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="number"], select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Scoreboard Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #282c34;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td:last-child {
+    color: #ff0000; /* Red text for points left */
+}
+
+/* Highlight Eliminated Players */
+.eliminated {
+    background-color: #ffcccc;
+}
+
+/* Score Input Section */
+#score-input {
+    margin: 20px 0;
+}
+
+#score-input label {
+    margin-right: 10px;
+}
+
+#score-input select, #score-input input {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+/* Quotes or Images Section */
+#quotes {
+    margin-top: 30px;
+}
+
+.quote-banner {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input[type="text"], input[type="number"], select {
+        width: 100%;
+    }
+
+    #score-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #score-input label, #score-input select, #score-input input, #score-input button {
+        margin: 5px 0;
+    }
+}
